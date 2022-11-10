@@ -1,41 +1,47 @@
-import React, { useContext} from "react";
+import React, { useContext } from "react";
 import { DataContext } from "../../context/DataProvider";
 import { Link } from "react-router-dom";
 
 
-export const Header = () => {
+export const Header = () =>
+{
   const value = useContext(DataContext);
   const [carrito] = value.carrito;
   const [menu, setMenu] = value.menu;
 
 
-  const toogleMenu = () =>{
+  const toogleMenu = () =>
+  {
     setMenu(!menu)
   }
- 
+
 
   return (
     <header>
       <div className="menu">
-      <box-icon name="menu"></box-icon>
+        <box-icon name="menu"></box-icon>
       </div>
+
       <Link to="/">
-      <div className="logo">
-        <img src="/images/Nike.jpg" alt="Nike" width="150" />
-      </div>
+        <div className="logo">
+          <img src="/images/Logo.jpg" alt="Logo" width="150" />
+        </div>
       </Link>
+
       <ul>
         <li>
           <Link to="/">INICIO</Link>
         </li>
         <li>
-          <Link to="/productos">PRODUCTOS</Link>
+          <Link to="/productos">Productos</Link>
         </li>
       </ul>
+
       <div className="cart" onClick={toogleMenu}>
         <box-icon name="cart"></box-icon>
         <span className="item__total"> {carrito.length} </span>
       </div>
+
     </header>
   )
 }
