@@ -47,53 +47,32 @@ export const ProductoDetalle = () =>
 
   return (
     <>
-      {
-        <div className="detalles">
-          <h2>{detalle.title}</h2>
-          <p className="price">${detalle.price}</p>
+      <div className="detalles">
+        <h2>{detalle.title}</h2>
 
-          <div className="grid">
-            <p className="nuevo">Nuevo</p>
+        <p className="price">${detalle.price}</p>
 
-            <div className="tamano">
-              <select placeholder="Tamaño" >
-                <option value="1">1</option>
-                <option value="1">2</option>
-                <option value="1">3</option>
-                <option value="1">4</option>
-                <option value="1">5</option>
-                <option value="1">6</option>
-                <option value="1">7</option>
-                <option value="1">8</option>
-              </select>
+        <div className="grid">
 
-              <p>&nbsp;Tamaño</p>
-            </div>
-
-            <button onClick={() => addCarrito(detalle.id)}>
-              Añadir al carrito
-            </button>
-
-          </div>
-
-
-
-          {
-            url ? <img src={images} alt={detalle.title} /> : <img src={detalle.image} alt={detalle.title} />
-          }
-          {/* <input type="range" min="1" max="36" step="1" value={url} onChange={handleInput} /> */}
-
-
-
-          <div className="description">
-            <p><b>description: </b>Acá debería ir una descripción</p>
-            <br />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vitae accusantium omnis, facere laudantium ipsa hic reprehenderit blanditiis quibusdam quos repellendus id illo reiciendis magni, aliquid beatae, consequatur sapiente! Sequi facere itaque,</p>
-          </div>
+          <button onClick={() => addCarrito(detalle.id)}>
+            Añadir al carrito
+          </button>
 
         </div>
 
-      }
+        {
+          url ? <img src={images} alt={detalle.title} /> : <img src={detalle.image} alt={detalle.title} />
+        }
+
+        <div className="description">
+          <p><b>Descripción: </b></p>
+          <br />
+          <p>{detalle.description}</p>
+        </div>
+
+      </div>
+
+
       <h2 className="relacionados">Productos relacionados</h2>
       <div className="productos">
         {
