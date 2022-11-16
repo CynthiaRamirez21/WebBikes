@@ -33,8 +33,15 @@ export const Header = () =>
           <Link to="/">INICIO</Link>
         </li>
         <li>
+          <Link to="/quienessomos">Quienes Somos</Link>
+        </li>
+        <li>
           <Link to="/productos">Productos</Link>
         </li>
+        <li>
+          <Link to="/">Contacto</Link>
+        </li>
+
       </ul>
 
       <div className="cart" onClick={toogleMenu}>
