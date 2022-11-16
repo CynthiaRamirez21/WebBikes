@@ -586,3 +586,18 @@ header ul li a {
     padding: 1rem 0;
   }
 }
+
+.divQuienesSomos{
+  padding-top: 150px;
+  text-align: center;
+}
+
+.textoQuienesSomos{
+  padding-bottom: 50px;
+}
+
+.imagen {
+  height: 500px;
+  width: 700px;
+  padding-bottom: 30px;
+}

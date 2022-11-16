@@ -4,7 +4,7 @@ const data = {
       {
         id: 1,
         title: "MOUNTAIN BIKE",
-        price: "$ 40.000",
+        price: " 40.000",
         image: require('./images/img01.jpg'),
         category: "",
         img1: "https://stockx-360.imgix.net/Nike-LD-Waffle-Sacai-Black-Nylon/Images/Nike-LD-Waffle-Sacai-Black-Nylon/Lv2/img",
