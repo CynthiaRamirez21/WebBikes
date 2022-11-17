@@ -29,9 +29,9 @@ export const Header = () =>
       </Link>
 
       <ul>
-        <li>
+        {/* <li>
           <Link to="/">INICIO</Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/quienessomos">Quienes Somos</Link>
         </li>
@@ -39,7 +39,7 @@ export const Header = () =>
           <Link to="/productos">Productos</Link>
         </li>
         <li>
-          <Link to="/">Contacto</Link>
+          <Link to="/contacto">Contacto</Link>
         </li>
 
       </ul>
