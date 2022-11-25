@@ -39,10 +39,9 @@ export const QuienesSomos = () =>
 
                                 <p>
                                     Nuestro emprendimiento surge a partir de la idea de tres ex compañeros de trabajo, decidimos
-                                    unirnos para desarrollar este marca de biciletas "Rally". Todos somos residentes de la ciudad
-                                    de USHUAIA, y siendo adeptos a las actividades al aire libre como el ciclismo de montaña,
-                                    notamos que los únicos productos que ofrece el mercado local son importados, difícil de
-                                    conseguir y costosos. Es por eso que decidimos poner en práctica este proyecto.
+                                    unirnos para desarrollar este marca de biciletas "Rally". Notamos que los únicos productos que
+                                    ofrece el mercado local son importados, difícil de conseguir y costosos. Es por eso que decidimos
+                                    poner en práctica este proyecto.
                                 </p>
                                 <br />
                                 <p>
