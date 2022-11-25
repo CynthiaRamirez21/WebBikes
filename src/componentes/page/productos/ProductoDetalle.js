@@ -50,7 +50,7 @@ export const ProductoDetalle = () =>
       <div className="detalles">
         <h2>{detalle.title}</h2>
 
-        <p className="price">${detalle.price}</p>
+        {/* <p className="price">${detalle.price}</p> */}
 
         <div className="grid">
 
